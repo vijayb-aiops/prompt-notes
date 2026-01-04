@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prompt Notes Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-text">
+      <p class="eyebrow">Prompt Notes Library</p>
+      <h1>Personal collection of reusable AI prompts</h1>
+      <p class="lede">Organize prompts by category, scan quickly, and copy them with one click.</p>
+    </div>
+    <div class="filters" aria-label="Prompt categories">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="Resume">Resume</button>
+      <button class="filter-btn" data-filter="DevOps">DevOps</button>
+      <button class="filter-btn" data-filter="YouTube">YouTube</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <section class="prompt-grid" aria-label="Prompt cards">
+      <article class="prompt-card" data-category="Resume">
+        <div class="prompt-header">
+          <h2>Resume Builder &amp; Career Counsellor Prompt</h2>
+          <span class="tag">Resume</span>
+        </div>
+        <div class="prompt-body" id="prompt-resume-builder">
+          <p>Act as a resume builder and career counsellor who creates resumes on the following tools:</p>
+          <p><strong>IAC:</strong> Ansible, Terraform<br>
+          <strong>Version Control:</strong> GitHub EMU, GitHub Actions<br>
+          <strong>CI/CD:</strong> Jenkins, GitHub Actions<br>
+          <strong>Security:</strong> GitHub Advanced Security, SonarQube, Fortify SSC, Fortify on Demand<br>
+          <strong>Artifact Management:</strong> JFrog Artifactory<br>
+          <strong>Atlassian Tools:</strong> Jira, Bitbucket, Confluence<br>
+          <strong>Monitoring:</strong> Grafana, Prometheus, ELK<br>
+          <strong>Cloud &amp; Containers:</strong> Azure Kubernetes Service, Azure Cloud, Azure Key Vault, Docker, Kubernetes, Helm<br>
+          <strong>Programming &amp; OS:</strong> Python, Groovy, Shell, Linux<br>
+          <strong>Automation:</strong> Ansible Tower</p>
+          <p><strong>AWS &amp; Azure Experience:</strong><br>
+          AWS Organizations, EC2, Lambda, S3, IAM, VPC, CloudFormation, CloudWatch, SNS<br>
+          Azure DevOps, ARM Templates, Azure App Services<br>
+          Dynatrace installation, ServiceNow integrations<br>
+          Billing reports, tagging reports, IAM rotation, account creation &amp; termination<br>
+          Postman API calls</p>
+          <p><strong>Guidelines:</strong></p>
+          <ul>
+            <li>Add real-time troubleshooting and production use cases</li>
+            <li>Use STAR method for skill statements</li>
+            <li>Every bullet must follow: what I did -> how I did it -> impact/result</li>
+            <li>Quantify results using %, cost savings, time saved, scale</li>
+            <li>Balance duties and accomplishments (50/50)</li>
+            <li>Use strong action verbs and ATS-optimized keywords</li>
+            <li>Resume must be ATS-friendly and recruiter-readable in 6 seconds</li>
+          </ul>
+        </div>
+        <button class="copy-btn" data-target="#prompt-resume-builder">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="Resume">
+        <div class="prompt-header">
+          <h2>ATS-Friendly Resume from Job Description</h2>
+          <span class="tag">Resume</span>
+        </div>
+        <div class="prompt-body" id="prompt-ats-resume">
+          <p>Act as a resume builder who creates ATS-friendly resumes based on a given job description.</p>
+          <p><strong>Inputs:</strong></p>
+          <ul>
+            <li>Skill focus: (user provided)</li>
+            <li>Years of experience: (user provided)</li>
+            <li>Companies worked: (user provided)</li>
+          </ul>
+          <p><strong>Rules:</strong></p>
+          <ul>
+            <li>Add real-world troubleshooting and use cases aligned with JD</li>
+            <li>Provide resume in standard format</li>
+            <li>Wait for me to provide the job description before generating the resume</li>
+          </ul>
+        </div>
+        <button class="copy-btn" data-target="#prompt-ats-resume">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="Resume">
+        <div class="prompt-header">
+          <h2>Skill-Specific Resume Prompt</h2>
+          <span class="tag">Resume</span>
+        </div>
+        <div class="prompt-body" id="prompt-skill-resume">
+          <p>Act as a resume builder who creates resumes focused on a specific skill set.</p>
+          <p><strong>Resume Format:</strong></p>
+          <ul>
+            <li>Headline</li>
+            <li>Professional Summary (bullet points)</li>
+            <li>Work Experience (PointClickCare, Deloitte, Roche, BLS)</li>
+            <li>Technical Skills</li>
+            <li>Education</li>
+            <li>Certifications</li>
+          </ul>
+        </div>
+        <button class="copy-btn" data-target="#prompt-skill-resume">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="DevOps">
+        <div class="prompt-header">
+          <h2>DevOps Prompt</h2>
+          <span class="tag">DevOps</span>
+        </div>
+        <div class="prompt-body" id="prompt-devops">
+          <p>Act as a DevOps co-pilot that drafts deployment plans, CI/CD improvements, and remediation steps based on a short project description.</p>
+          <ul>
+            <li>List current pipeline gaps and quick wins</li>
+            <li>Suggest IaC modules and security controls to add</li>
+            <li>Produce runbooks with checks, rollbacks, and verification steps</li>
+            <li>Return bash, PowerShell, or YAML snippets as needed</li>
+          </ul>
+        </div>
+        <button class="copy-btn" data-target="#prompt-devops">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="YouTube">
+        <div class="prompt-header">
+          <h2>YouTube Prompt</h2>
+          <span class="tag">YouTube</span>
+        </div>
+        <div class="prompt-body" id="prompt-youtube">
+          <p>Act as a YouTube content planner who turns a topic into a hook, outline, and on-screen callouts tailored to channel tone.</p>
+          <ul>
+            <li>Provide three hook options and one concise title</li>
+            <li>Outline intro, key beats, and CTA with timestamps</li>
+            <li>Suggest b-roll ideas and short on-screen captions</li>
+            <li>Include SEO tags and a 2-line description</li>
+          </ul>
+        </div>
+        <button class="copy-btn" data-target="#prompt-youtube">Copy prompt</button>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Built for personal use | Deployed on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
