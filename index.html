@@ -120,6 +120,134 @@
         <button class="copy-btn" data-target="#prompt-devops">Copy prompt</button>
       </article>
 
+      <article class="prompt-card" data-category="DevOps">
+        <div class="prompt-header">
+          <h2>Linux Shell Automation Repo Scaffolding Prompt</h2>
+          <span class="tag">Prompt</span>
+        </div>
+        <div class="prompt-body" id="prompt-devops-scaffold">
+          <p>You are a senior DevOps engineer.</p>
+          <p>I have an empty GitHub repository already cloned locally named:<br>
+          thinkwithops-linux-shell-automation</p>
+          <p><strong>Your task:</strong><br>
+          ONLY create folders, subfolders, and placeholder files.<br>
+          DO NOT write any shell script logic yet.<br>
+          DO NOT add explanations outside files.<br>
+          DO NOT generate sample content unless explicitly asked.</p>
+          <p>==================================================<br>
+          ROOT REPOSITORY STRUCTURE<br>
+          ==================================================</p>
+          <p>Create the following root-level structure:</p>
+<pre>
+thinkwithops-linux-shell-automation/
+├── 01-log-management/
+├── 02-backup-restore/
+├── 03-system-health/
+├── 04-user-access/
+├── 05-service-watchdog/
+├── 06-deployment-automation/
+├── 07-file-organization/
+├── 08-security-audit/
+├── 09-cloud-helpers/
+├── 10-devops-toolkit/
+├── shared/
+├── docs/
+└── README.md
+</pre>
+          <p>==================================================<br>
+          STANDARD PROJECT STRUCTURE (APPLY TO ALL 10 PROJECTS)<br>
+          ==================================================</p>
+<pre>
+&lt;project-folder&gt;/
+├── src/
+│   ├── main.sh
+│   └── config.sh
+├── sample-data/
+├── output/
+│   └── reports/
+├── tests/
+│   └── test_main.sh
+├── cron/
+│   └── example.cron
+├── README.md
+├── CHANGELOG.md
+└── run.sh
+</pre>
+          <p>==================================================<br>
+          SPECIAL CASE: 01-log-management<br>
+          ==================================================</p>
+<pre>
+01-log-management/src/
+├── log_cleaner.sh
+├── log_analyzer.sh
+└── config.sh
+
+01-log-management/tests/
+└── test_log_cleaner.sh
+
+01-log-management/cron/
+└── log_cleaner.cron
+</pre>
+          <p>==================================================<br>
+          README CONTENT RULES<br>
+          ==================================================</p>
+<pre>
+# Project Name
+
+## Problem Statement
+Real-world problem this script solves.
+
+## Why This Matters in Production
+Explain the impact (disk full, outages, security).
+
+## Solution Overview
+High-level explanation of the approach.
+
+## Linux Concepts Used
+- Filesystem
+- Cron
+- Permissions
+- Processes
+
+## How to Run
+Steps to execute safely.
+
+## Automation Ready
+Cron / background / CI compatibility.
+
+## Possible Extensions
+Cloud, CI/CD, Kubernetes, etc.
+</pre>
+          <p>==================================================<br>
+          ROOT README.md<br>
+          ==================================================</p>
+<pre>
+# ThinkWithOps – Linux Shell Automation
+
+This repository contains real-world Linux automation projects built using shell scripting.
+
+The goal of this repository is to demonstrate:
+- Linux system understanding
+- Production-safe automation
+- Progressive DevOps thinking
+
+Projects evolve from basic Linux automation to cloud and CI/CD integrations.
+</pre>
+          <p>==================================================<br>
+          FINAL RULES<br>
+          ==================================================</p>
+          <ul>
+            <li>Use mkdir -p where needed</li>
+            <li>Create empty files where content is not specified</li>
+            <li>Do not add extra files</li>
+            <li>Do not add code logic</li>
+            <li>Do not explain anything outside files</li>
+            <li>Execute this as if running locally on a Linux system</li>
+          </ul>
+        </div>
+        <button class="copy-btn" data-target="#prompt-devops-scaffold">Copy prompt</button>
+      </article>
+
       <article class="prompt-card" data-category="YouTube">
         <div class="prompt-header">
           <h2>YouTube Prompt</h2>
