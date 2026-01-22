@@ -18,6 +18,7 @@
       <button class="filter-btn" data-filter="Resume">Resume</button>
       <button class="filter-btn" data-filter="DevOps">DevOps</button>
       <button class="filter-btn" data-filter="YouTube">YouTube</button>
+      <button class="filter-btn" data-filter="Qwen">Qwen</button>
     </div>
   </header>
 
@@ -613,6 +614,63 @@ project-10_self-healing-pipeline/docker-compose.yml
           - Do not affect Resume or DevOps prompts</p>
         </div>
         <button class="copy-btn" data-target="#prompt-youtube-branding">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="Qwen">
+        <div class="prompt-header">
+          <h2>Project 1: AI Commit &amp; Changelog Generator</h2>
+          <span class="tag">Prompt</span>
+        </div>
+        <div class="prompt-body" id="prompt-qwen-project-1">
+          <p>"Generate a complete README.md for my Project 1: AI Commit &amp; Changelog Generator.<br>
+          Include only these sections in order:</p>
+          <p>Project title and description<br>
+          Setup instructions (Ollama install on Windows, adding to PATH, verifying installation, pulling phi3 model)<br>
+          Usage steps (install deps, configure .env, stage changes, run script, commit)<br>
+          Configuration options (list all .env variables with defaults and purpose)<br>
+          FAQ (answer common questions like 'Do I need ollama serve?', 'Can I use this in CI?', 'What if I get charmap error?')<br>
+          Project structure (show folder tree)<br>
+          Format the entire output as one continuous markdown code block with no mid-way triple backticks, no sub-code blocks, and no section breaks — just plain markdown inside a single md ... block so I can copy it all at once."</p>
+        </div>
+        <button class="copy-btn" data-target="#prompt-qwen-project-1">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="Qwen">
+        <div class="prompt-header">
+          <h2>Project 2: Build-Failure Explainer Bot</h2>
+          <span class="tag">Prompt</span>
+        </div>
+        <div class="prompt-body" id="prompt-qwen-project-2">
+          <p>"Generate a complete README.md for my Project 2: Build-Failure Explainer Bot.<br>
+          Include only these sections in order:</p>
+          <p>Project title and description<br>
+          Setup instructions (Ollama install on Windows, adding to PATH, verifying installation, pulling phi3 model, setting up Jenkins or mock logs)<br>
+          Usage steps (install deps, configure .env, run script with log input, view AI explanation, send to Slack if configured)<br>
+          Configuration options (list all .env variables like MODEL_NAME, OLLAMA_HOST, SLACK_WEBHOOK_URL, MAX_LOG_CHARS, etc.)<br>
+          FAQ (e.g., 'Do I need a real Jenkins?', 'Can I test without Slack?', 'How to use with GitHub Actions?')<br>
+          Project structure (show folder tree for project-02)<br>
+          Format the entire output as one continuous markdown code block with no mid-way triple backticks, no sub-code blocks, and no section breaks — just plain markdown inside a single md ... block so I can copy it all at once."</p>
+        </div>
+        <button class="copy-btn" data-target="#prompt-qwen-project-2">Copy prompt</button>
+      </article>
+
+      <article class="prompt-card" data-category="Qwen">
+        <div class="prompt-header">
+          <h2>Universal Prompt</h2>
+          <span class="tag">Prompt</span>
+        </div>
+        <div class="prompt-body" id="prompt-qwen-universal">
+          <p>"Generate a complete README.md for my [PROJECT NAME].<br>
+          Include only these sections in order:</p>
+          <p>Project title and description – explain what it does in simple terms<br>
+          Setup instructions – include Ollama install (Windows), PATH setup, model pull (phi3), and any project-specific tools (e.g., Jenkins, Slack webhook, Docker, etc.)<br>
+          Usage steps – how to run it locally (install deps, configure .env, execute script)<br>
+          Configuration options – list all .env variables with defaults and purpose<br>
+          FAQ – answer 2–3 common questions (e.g., “Do I need X?”, “Can I test without Y?”)<br>
+          Project structure – show the folder tree<br>
+          Format the entire output as one continuous markdown code block with no mid-way triple backticks, no sub-code blocks, and no section breaks — just plain markdown inside a single md ... block so I can copy it all at once."</p>
+        </div>
+        <button class="copy-btn" data-target="#prompt-qwen-universal">Copy prompt</button>
       </article>
     </section>
   </main>
